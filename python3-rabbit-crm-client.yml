@@ -1,0 +1,11 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  python3-rabbit-crm-client:
+    lang: python3
+    handler: ./python3-rabbit-crm-client
+    image: lucasalexander/python3-rabbit-crm-client
+    secrets:
+     - rabbitsecrets
