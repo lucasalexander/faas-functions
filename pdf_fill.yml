@@ -1,6 +1,5 @@
 provider:
   name: faas
-  gateway: http://localhost:8080
 
 functions:
   pdf_fill:
