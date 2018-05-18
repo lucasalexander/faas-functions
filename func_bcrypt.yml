@@ -3,7 +3,7 @@ provider:
   gateway: http://localhost:8080
 
 functions:
-  pdf_fill:
+  func-bcrypt:
     lang: dockerfile
-    image: lucasalexander/faas-pdffill
-    handler: ./pdf_fill
+    handler: ./func-bcrypt
+    image: lucasalexander/func-bcrypt

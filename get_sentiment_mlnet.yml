@@ -1,0 +1,9 @@
+provider:
+  name: faas
+  gateway: http://localhost:8080
+
+functions:
+  get_sentiment_mlnet:
+    lang: csharp
+    handler: ./get_sentiment_mlnet
+    image: get_sentiment_mlnet
